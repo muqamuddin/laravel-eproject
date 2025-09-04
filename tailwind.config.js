@@ -1,3 +1,4 @@
+
 module.exports = {
   content: [
     './resources/**/*.blade.php',
@@ -7,5 +8,6 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+  ],
 }
