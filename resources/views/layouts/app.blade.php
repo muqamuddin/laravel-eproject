@@ -22,6 +22,7 @@
     <!-- نوار ناوبری واکنش‌گرا -->
     <header x-data="{ open: false }" class="bg-white shadow-sm sticky top-0 z-50">
         <!-- ...navbar content stays unchanged... -->
+        <livewire:component.navbar>
     </header>
 
     <!-- بنرها -->

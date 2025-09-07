@@ -41,6 +41,6 @@ class BrowseAllProducts extends Component
     ];
     public function render()
     {
-        return view('livewire.browse-all-products');
+        return view('livewire.browse-all-products')->extends('layouts.app');
     }
 }

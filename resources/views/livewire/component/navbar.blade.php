@@ -1,3 +1,4 @@
+@persist('nav')
 <div>
      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <!-- لوگو -->
@@ -5,7 +6,7 @@
 
             <!-- ناوبری دسکتاپ -->
             <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
-                <a href="#" class="hover:text-teal-600 ml-4">همه محصولات</a>
+                <a href="{{ route('products.index') }}" class="hover:text-teal-600 ml-4">همه محصولات</a>
                 <a href="#" class="hover:text-teal-600">دسته‌بندی‌ها</a>
                 <a href="#" class="hover:text-teal-600">برندها</a>
                 <a href="#" class="hover:text-teal-600">فروش ویژه</a>
@@ -26,10 +27,11 @@
 
         <!-- منوی موبایل -->
         <div x-show="open" class="md:hidden bg-white border-t border-gray-200 px-4 pb-4 space-y-2">
-            <a href="#" class="block text-sm font-medium text-gray-700 hover:text-teal-600">همه محصولات</a>
+            <a href="{{ route('products.index') }}" class="block text-sm font-medium text-gray-700 hover:text-teal-600">همه محصولات</a>
             <a href="#" class="block text-sm font-medium text-gray-700 hover:text-teal-600">دسته‌بندی‌ها</a>
             <a href="#" class="block text-sm font-medium text-gray-700 hover:text-teal-600">برندها</a>
             <a href="#" class="block text-sm font-medium text-gray-700 hover:text-teal-600">فروش ویژه</a>
             <a href="#" class="block text-sm font-medium text-gray-700 hover:text-teal-600">کشف روزانه</a>
         </div>
 </div>
+@endpersist

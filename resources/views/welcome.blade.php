@@ -37,8 +37,8 @@
         <div class="max-w-7xl mx-auto px-4 text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-4">بهترین و جدیدترین محصولات را خریداری کنید</h2>
             <p class="text-lg text-gray-600 mb-8">مجموعه‌ای از محصولات منتخب مخصوص شما.</p>
-            <a href="#"
-                class="inline-block bg-teal-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-teal-700 transition">
+            <a href="{{ route('products.index') }}"
+                class="inline-block bg-teal-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-teal-700 transition" wire:navigate>
                 مشاهده همه محصولات
             </a>
         </div>

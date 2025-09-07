@@ -8,4 +8,4 @@ Route::get('/', function () {
 });
 
 
-Route::get('/allproduct', BrowseAllProducts::class)->name('allproducts');
+Route::get('/products', BrowseAllProducts::class)->name('products.index');
