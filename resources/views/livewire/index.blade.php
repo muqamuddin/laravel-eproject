@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<div>
+   <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 
 <head>
@@ -16,21 +17,6 @@
 </head>
 
 <body class="bg-gray-50 text-gray-900 font-sans">
-
-    <!-- نوار ناوبری واکنش‌گرا -->
-    <header x-data="{ open: false }" class="bg-white shadow-sm sticky top-0 z-50">
-      <livewire:component.navbar>
-    </header>
-
-    <!-- بنر اطلاع‌رسانی ۱ -->
-    <div class="bg-teal-600 text-white text-center py-3 text-sm">
-        ارسال رایگان برای سفارش‌های بالای ۵۰ دلار! 🚚
-    </div>
-
-    <!-- بنر اطلاع‌رسانی ۲ -->
-    <div class="bg-yellow-400 text-center py-2 text-sm font-medium text-gray-900">
-        ⚡ فروش ویژه: تا ۷۰٪ تخفیف بر روی برخی محصولات به مدت ۲۴ ساعت!
-    </div>
 
     <!-- بخش معرفی -->
     <section class="bg-white py-16">
@@ -68,9 +54,8 @@
         </div>
     </section>
 
-    <!-- پاورقی -->
-    <livewire:component.footer />
-
     @livewireScripts
 </body>
 </html>
+
+</div>
