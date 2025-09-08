@@ -1,13 +1,12 @@
 <div>
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <!-- لوگو -->
-       @persist('h1')
+
         <h1 class="text-2xl font-bold text-teal-600">
             <a href="{{ route('home') }}" wire:navigate>
                 {{ config('app.name', 'شاپ‌ایز') }}
             </a>
         </h1>
-        @endpersist
 
 
         <!-- ناوبری دسکتاپ -->
