@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', ' نام فروشگاه ')</title>
 
-    <!-- Fonts & Alpine.js -->
     <style>
         html {
             scrollbar-color: #0D9488 #f1f1f1;

@@ -12,8 +12,8 @@
          <!-- ناوبری دسکتاپ -->
          <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
              <a href="{{ route('products.index') }}" class="hover:text-teal-600 ml-4" wire:navigate>همه محصولات</a>
-             <a href="{{ route('category.index') }}" class="hover:text-teal-600">دسته‌بندی‌ها</a>
-             <a href="{{ route('brand.index') }}" class="hover:text-teal-600">برندها</a>
+             <a href="{{ route('category.index') }}" class="hover:text-teal-600" wire:navigate>دسته‌بندی‌ها</a>
+             <a href="{{ route('brand.index') }}" class="hover:text-teal-600" wire:navigate>برندها</a>
              <a href="#" class="hover:text-teal-600">فروش ویژه</a>
              <a href="#" class="hover:text-teal-600">کشف روزانه</a>
          </nav>
@@ -35,8 +35,8 @@
          <a href="{{ route('products.index') }}" class="block text-sm font-medium text-gray-700 hover:text-teal-600">همه
              محصولات</a>
          <a href="{{ route('category.index') }}"
-             class="block text-sm font-medium text-gray-700 hover:text-teal-600">دسته‌بندی‌ها</a>
-         <a href="{{ route('brand.index') }}" class="block text-sm font-medium text-gray-700 hover:text-teal-600">برندها</a>
+             class="block text-sm font-medium text-gray-700 hover:text-teal-600" wire:navigate>دسته‌بندی‌ها</a>
+         <a href="{{ route('brand.index') }}" class="block text-sm font-medium text-gray-700 hover:text-teal-600" wire:navigate>برندها</a>
          <a href="#" class="block text-sm font-medium text-gray-700 hover:text-teal-600">فروش ویژه</a>
          <a href="#" class="block text-sm font-medium text-gray-700 hover:text-teal-600">کشف روزانه</a>
      </div>
