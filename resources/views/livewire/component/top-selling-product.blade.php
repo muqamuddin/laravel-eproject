@@ -1,3 +1,6 @@
+
+
+  <section class="py-16 bg-gray-100">
 <div class="max-w-7xl mx-auto px-4" dir="rtl">
     <h3 class="text-3xl font-bold mb-10 text-center text-gray-800">🔥 پرفروش‌ترین محصولات</h3>
 
@@ -16,3 +19,4 @@
         @endfor
     </div>
 </div>
+  </section>
