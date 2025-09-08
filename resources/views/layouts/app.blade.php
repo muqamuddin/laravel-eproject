@@ -9,7 +9,18 @@
     <title>@yield('title', ' نام فروشگاه ')</title>
 
     <!-- Fonts & Alpine.js -->
-   
+    <style>
+        html {
+            scrollbar-color: #0D9488 #f1f1f1;
+            scrollbar-width: thin;
+            scroll-behavior: smooth;
+        }
+
+        ::selection {
+            background: #0D9488;
+            color: white;
+        }
+    </style>
 
     @vite('resources/css/app.css')
     @livewireStyles
@@ -18,9 +29,9 @@
 <body class="bg-gray-50 text-gray-900 font-sans">
 
     <!-- نوار ناوبری واکنش‌گرا -->
-        <!-- ...navbar content stays unchanged... -->
-        <livewire:component.navbar />
-            
+    <!-- ...navbar content stays unchanged... -->
+    <livewire:component.navbar />
+
     <!-- بنرها -->
     <div class="bg-teal-600 text-white text-center py-3 text-sm">
         ارسال رایگان برای سفارش‌های بالای ۵۰ دلار! 🚚
