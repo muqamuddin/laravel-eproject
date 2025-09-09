@@ -19,8 +19,14 @@
             background: #0D9488;
             color: white;
         }
-    </style>
 
+        .back-to-top.actives {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     @vite('resources/css/app.css')
     @livewireStyles
 </head>
@@ -59,6 +65,48 @@
 
 
     @livewireScripts
+    <script>
+        function initBackToTop() {
+            var backToTopButton = document.getElementById('back-to-top');
+            if (!backToTopButton) return;
+
+            window.removeEventListener('scroll', handleScroll);
+            backToTopButton.removeEventListener('click', handleClick);
+
+            function handleScroll() {
+                backToTopButton.classList.toggle('actives', window.pageYOffset > 200);
+            }
+
+            function handleClick(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+
+            window.addEventListener('scroll', handleScroll);
+            backToTopButton.addEventListener('click', handleClick);
+        }
+
+        document.addEventListener('DOMContentLoaded', initBackToTop);
+        document.addEventListener('livewire:navigated', initBackToTop);
+    </script>
+
+    <!-- Floating Buttons Container -->
+    <div class="fixed bottom-5 right-5 z-[1000] flex gap-2">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/93776578603" class="w-11 h-11" target="_blank" title="Chat with us on WhatsApp">
+            <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp Chat" class="w-full h-full">
+        </a>
+
+        <!-- Back to Top Button -->
+        <a href="#" id="back-to-top"
+            class=" back-to-top w-8 h-8 bg-teal-600 text-white rounded-full flex items-center justify-center opacity-0 invisible transition-all duration-00 hover:bg-teal-500">
+            <i class="fa fa-arrow-up text-xs"></i>
+        </a>
+    </div>
+
 </body>
 
 </html>
