@@ -21,7 +21,7 @@
                     <p class="text-[#0D9488] font-bold text-base mb-4">۶٬۰۰۰٬۰۰۰ تومان</p>
 
                     <a href="{{ route('cart.index') }}"
-                       class="inline-block bg-[#0D9488] hover:bg-teal-700 text-white font-medium px-4 py-2 rounded-md transition duration-300">
+                       class="inline-block bg-[#0D9488] hover:bg-teal-700 text-white font-medium px-4 py-2 rounded-md transition duration-300" wire:navigate>
                         افزودن به سبد خرید
                     </a>
                 </div>
@@ -41,8 +41,8 @@
                     <p class="text-gray-500 text-sm mb-2">با نور RGB</p>
                     <p class="text-[#0D9488] font-bold text-base mb-4">۲٬۳۰۰٬۰۰۰ تومان</p>
 
-                    <a href="{{ route('cart.index') }}"
-                       class="inline-block bg-[#0D9488] hover:bg-teal-700 text-white font-medium px-4 py-2 rounded-md transition duration-300">
+                    <a href="{{ route('cart.index') }}" 
+                       class="inline-block bg-[#0D9488] hover:bg-teal-700 text-white font-medium px-4 py-2 rounded-md transition duration-300" wire:navigate>
                         افزودن به سبد خرید
                     </a>
                 </div>
